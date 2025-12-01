@@ -37,7 +37,7 @@ body {
 
 .h1fontChange {
 
-  font-family: "Times New Roman", Georgia, serif;
+  font-family: "Times New Roman";
   font-size: 35px;
 
 
@@ -45,7 +45,7 @@ body {
 
 .h1fontChangeName {
 
-  font-family: "Times New Roman", Georgia, serif;
+  font-family: "Times New Roman";
   font-size: 35px;
   color: #edf6f9;
 
@@ -60,16 +60,27 @@ body {
 
 .pfontChange {
 
-  font-family: "Times New Roman", Georgia, serif;
+  font-family: "Times New Roman";
   font-size: 24px;
 
 }
 
-.navBackGround {
-
+.navBarColor {
   background-color: #006d77;
 }
 
+.navBarColorActive {
+  font-family: "Times New Roman";
+  color: #e29578;
+  border-bottom: 4px solid #e29578;
+  font-size: 20px;
+
+}
+
+.navBarText {
+  font-family: "Times New Roman";
+  font-size: 20px;
+}
 
 
 
@@ -100,4 +111,15 @@ body {
   width: 50%;
   height: 50%;
   border-radius: 50%;
+}
+
+
+.navbar-item.active {
+  background-color: #007bff;
+  /* Example: blue background */
+  color: white;
+  /* Example: white text */
+  font-weight: bold;
+  border-radius: 5px;
+  /* Example: rounded corners */
 }
