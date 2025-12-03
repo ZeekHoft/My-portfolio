@@ -31,7 +31,7 @@ export default function About() {
                 <div className=" w-full text-center md:text-center">
                     <div style={{ display: 'flex', gap: '10px' }}>
                         <h1 className="text-3xl"> Hi! I'm
-                            <span className="text-3xl h1fontChangeName"> Francis Vince Jaca </span>
+                            <span className="text-3xl h1fontChangeName"> Francis Vince Jaca, </span>
                             <span className="text-3xl ">I love doing </span>
                             <span className="text-3xl ">Mobile & Software development.</span>
 
