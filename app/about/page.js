@@ -1,6 +1,6 @@
 import HobbiesList from '../_components/hobbiesList';
 import Contact from '../_components/contact';
-import GetFont from '../_components/myFonts';
+import GetFont from '../_components/globalfont';
 
 
 

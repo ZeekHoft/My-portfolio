@@ -1,5 +1,4 @@
-
-import GetFont from '../_components/myFonts';
+import GetFont from './globalfont';
 
 
 const SocialLink = ({ href, iconSrc, altText, text }) => {

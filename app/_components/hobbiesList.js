@@ -3,7 +3,7 @@ import { CgGym, CgSmartHomeCooker } from "react-icons/cg";
 import { GiFrisbee, GiGamepadCross } from "react-icons/gi";
 import { MdLocalMovies, MdOutlineTv } from "react-icons/md";
 import { PiCookingPotDuotone } from "react-icons/pi";
-import GetFont from '../_components/myFonts';
+import GetFont from './globalfont';
 
 
 
