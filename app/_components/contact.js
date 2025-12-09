@@ -1,5 +1,5 @@
 import myLocalFont from './globalfont';
-
+import { BlurAnimation } from './animation';
 
 const SocialLink = ({ href, iconSrc, altText, text }) => {
     return (
@@ -37,7 +37,8 @@ export default function Page() {
     return (
         <div >
             <div className="tracking-wide">
-                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl "> Contact
+                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl ">
+                    <BlurAnimation text="Contact" />
 
                 </h1>
 

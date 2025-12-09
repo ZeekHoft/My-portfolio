@@ -5,7 +5,7 @@ import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
 import { FaDatabase, FaServer } from "react-icons/fa";
 import myLocalFont from './globalfont';
-import { NameAnimation, TextAnimation } from "./animation";
+import { NameAnimation, TextAnimation, BlurAnimation } from "./animation";
 
 
 
@@ -27,7 +27,7 @@ const Services = () => {
             <item.Icon className="text-4xl text-orange-400 mt-1 flex-shrink-0" />
             <div>
                 <h3 className="text-xl  ">{item.value}</h3>
-                <p className="text-sm text-gray-400">{item.description}</p>
+                <p className="text-sm textGray">{item.description}</p>
             </div>
         </div>
     );
@@ -37,13 +37,13 @@ const Services = () => {
         <div>
             <div className={`p-4 md:p-10  ${myLocalFont.className}`}>
                 <div className="tracking-wide text-center mb-10">
-                    <h1 className="h1fontChangeName text-5xl uppercase inline-block border-b-4 border-orange-500 pb-2">
-                        <NameAnimation>Services</NameAnimation>
+                    <h1 className="h1fontChangeName text-5xl uppercase pb-2">
+                        <BlurAnimation text="Services" />
 
                     </h1>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:gap-10 max-w-6xl mx-auto">
+                {/* <div className="flex flex-col md:flex-row md:gap-10 max-w-6xl mx-auto">
 
                     <div className="w-full md:w-1/2 mb-8 md:mb-0 containerColor rounded-lg shadow-xl overflow-hidden">
                         {column1Items.map((item) => <ServiceItem key={item.key} item={item} />)}
@@ -53,7 +53,7 @@ const Services = () => {
                         {column2Items.map((item) => <ServiceItem key={item.key} item={item} />)}
                     </div>
 
-                </div>
+                </div> */}
             </div>
         </div>
 

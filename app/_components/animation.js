@@ -2,18 +2,17 @@
 // import { motion } from "framer-motion"
 
 import * as motion from "motion/react-client"
-import TypingText from "@/components/ui/shadcn-io/typing-text";
 import React from 'react'
-
-
+import TypingText from "@/components/ui/shadcn-io/typing-text";
+import BlurText from "@/components/ui/shadcn-io/blur-text";
 
 function Animation({ children }) {
     const [rotate, setRotate] = React.useState(false);
     return (
         <motion.div
 
-            initial={{ opacity: 0, y: 50, marginBottom: -50 }}
-            animate={{ opacity: 1, y: 0, marginBottom: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1.0, ease: "anticipate" }}
 
         // Animation duration of 0.8 seconds
@@ -28,8 +27,8 @@ export function NameAnimation({ children }) {
     return (
         <motion.div
 
-            initial={{ opacity: 0, y: 100, marginBottom: 100 }}
-            animate={{ opacity: 1, y: 0, marginBottom: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1.0, ease: "anticipate" }}
 
         >
@@ -42,8 +41,8 @@ export function TextAnimation({ children }) {
     return (
         <motion.div
 
-            initial={{ opacity: 0, y: 50, marginBottom: -50 }}
-            animate={{ opacity: 1, y: 0, marginBottom: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1.0, ease: "anticipate" }}
 
         >
@@ -54,8 +53,8 @@ export function NavDropDown({ children }) {
     return (
         <motion.div
 
-            initial={{ opacity: 0, y: 50, marginBottom: -50 }}
-            animate={{ opacity: 1, y: 0, marginBottom: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: "anticipate" }}
 
         >
@@ -82,6 +81,24 @@ export function TypingAnimation({ children }) {
 }
 
 
+export function BlurAnimation({ text, children }) {
+    const handleAnimationComplete = () => {
+        console.log('Animation completed!');
+    };
+
+    return (
+
+        <BlurText
+            text={text}
+            delay={150}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="inline-block  " >
+
+        </BlurText >
+    )
+}
 
 
 
