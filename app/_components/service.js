@@ -1,63 +1,132 @@
 
-
-
 import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
-import { FaDatabase, FaServer } from "react-icons/fa";
+import { FaDatabase, FaServer, FaGamepad } from "react-icons/fa";
 import myLocalFont from './globalfont';
 import { NameAnimation, TextAnimation, BlurAnimation } from "./animation";
+
+import * as React from "react"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
+
+
+
+
 
 
 
 const ServicesList = [
     { key: 'service1', value: 'Mobile App Development', Icon: FaMobileAlt, description: 'Building high-performance native and cross-platform mobile applications.' },
-    { key: 'service2', value: 'Web Software Development', Icon: FaLaptopCode, description: 'Creating robust, scalable full-stack web applications using modern frameworks.' },
+    { key: 'service2', value: 'Web Development', Icon: FaLaptopCode, description: 'Creating robust, scalable full-stack web applications using modern frameworks.' },
     { key: 'service3', value: 'UX/UI Design & Prototyping', Icon: FaPencilRuler, description: 'Designing intuitive user interfaces and user-centered experiences.' },
-    { key: 'service4', value: 'Database Management', Icon: FaDatabase, description: 'Efficient setup, migration, and maintenance of database systems.' },
+    { key: 'service4', value: 'Game Development', Icon: FaGamepad, description: 'Creative technologist who brings video games to life by turning simple mechanics to and addicting gameplay' },
     { key: 'service5', value: 'Technical Consulting', Icon: FaUsers, description: 'Providing expert guidance on technology stack and project architecture.' },
     { key: 'service6', value: 'API & Backend Services', Icon: FaServer, description: 'Implementing secure non-sql servers & API hosting set-up.' },
+
 ];
 
 const Services = () => {
-    const column1Items = ServicesList.slice(0, 3);
-    const column2Items = ServicesList.slice(3, 6);
-
-    const ServiceItem = ({ item }) => (
-        <div key={item.key} className="flex items-start gap-4 p-4 border-b border-gray-700 last:border-b-0">
-            <item.Icon className="text-4xl text-orange-400 mt-1 flex-shrink-0" />
-            <div>
-                <h3 className="text-xl  ">{item.value}</h3>
-                <p className="text-sm textGray">{item.description}</p>
-            </div>
-        </div>
-    );
-
     return (
 
-        <div>
-            <div className={`p-4 md:p-10  ${myLocalFont.className}`}>
-                <div className="tracking-wide text-center mb-10">
-                    <h1 className="h1fontChangeName text-5xl uppercase pb-2">
-                        <BlurAnimation text="Services" />
+        <div className={`p-4 md:p-10 ${myLocalFont.className}`}>
 
-                    </h1>
-                </div>
+            <div className="mt-20">
+                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl p-10 ">
+                    <BlurAnimation text="Services" />
 
-                {/* <div className="flex flex-col md:flex-row md:gap-10 max-w-6xl mx-auto">
-
-                    <div className="w-full md:w-1/2 mb-8 md:mb-0 containerColor rounded-lg shadow-xl overflow-hidden">
-                        {column1Items.map((item) => <ServiceItem key={item.key} item={item} />)}
-                    </div>
-
-                    <div className="w-full md:w-1/2 containerColor rounded-lg shadow-xl overflow-hidden">
-                        {column2Items.map((item) => <ServiceItem key={item.key} item={item} />)}
-                    </div>
-
-                </div> */}
+                </h1>
+                <Carousel
+                    opts={{
+                        align: "start",
+                    }}
+                    className="w-full max-w-7xl mx-auto  "
+                >
+                    <CarouselContent>
+                        {ServicesList.map((item, index) => (
+                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                                <div className="p-1">
+                                    <Card className="min-h-[250px] flex flex-col justify-between bg-white md:h-80 md:w-100">
+                                        <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+                                            <item.Icon className="text-5xl text-orange-400 mb-4" />
+                                            <h3 className="text-xl font-bold mb-2">{item.value}</h3>
+                                            <p className="text-sm text-gray-500">{item.description}</p>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    {/* <CarouselPrevious />
+                    <CarouselNext /> */}
+                </Carousel>
             </div>
         </div>
-
     );
 };
 
 export default Services;
+
+
+
+
+// function Service() {
+//     return (
+//         <div>
+//             <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl ">
+//                 <BlurAnimation text="Services" />
+
+//             </h1>
+//             <div className="flex justify-center">
+//                 <Carousel
+//                     opts={{
+//                         align: "start",
+//                     }}
+//                     className="w-1/1 max-w-sm md:w-1/1 md:max-w-5xl md:max-h-96"
+//                 >
+//                     <Carousel>
+//                         <CarouselContent>
+//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+//                                 <Card>
+//                                     <CardContent className="flex aspect-square items-center justify-center p-6">
+//                                     </CardContent>
+//                                 </Card>
+
+
+//                             </CarouselItem>
+//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+//                         </CarouselContent>
+//                     </Carousel>
+//                     <CarouselPrevious />
+//                     <CarouselNext />
+//                 </Carousel></div>
+//         </div>
+//     )
+// }
+
+// export default Service;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
