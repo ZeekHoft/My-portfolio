@@ -10,7 +10,7 @@ export default function Home() {
         <AnimatedBeams />
       </div>
 
-      <div className='pt-20 md:pt-5 relative z-0 '>
+      <div className=' '>
         <Services />
       </div>
     </div>

@@ -36,10 +36,10 @@ const ServicesList = [
 const Services = () => {
     return (
 
-        <div className={`p-4 md:p-10 ${myLocalFont.className}`}>
+        <div className={`p-4  ${myLocalFont.className}`}>
 
             <div className="mt-20">
-                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl p-10 ">
+                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl pb-10 ">
                     <BlurAnimation>Services</BlurAnimation>
 
                 </h1>
