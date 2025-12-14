@@ -52,7 +52,7 @@ export function TextAnimation({ children }) {
 export function NavDropDown({ children }) {
     return (
         <motion.div
-
+            className="relative z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: "anticipate" }}
@@ -75,7 +75,6 @@ export function TypingAnimation({ children }) {
             textColors={['#f1c604', '#1d2435', '#E0E0E0']}
             variableSpeed={{ min: 50, max: 120 }}
         >
-            {children}
         </TypingText>
     )
 }

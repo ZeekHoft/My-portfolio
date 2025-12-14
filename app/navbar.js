@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import myLocalFont from './_components/globalfont';
-import { NavDropDown } from "./_components/animation";
+import { NavDropDown, } from "./_components/animation";
 export default function Header() {
     const pathname = usePathname();
     const inactiveClasses = "textGray hover:text-gray-300 hover:border-b-4 hover:border-gray-300 navBarText";
