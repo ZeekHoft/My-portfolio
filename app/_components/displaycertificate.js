@@ -5,7 +5,7 @@ const DisplayCertificate = ({ imgSrc, alt, title, link, iconlink, context, badge
     return (
         <div className='group'>
             <div className='pt-10'>
-                <div className="relative md:flex md:items-center bg-slate-900/40 rounded-[24px] p-6 shadow-2xl backdrop-blur-md border border-white/5 transition-all duration-500 hover:border-yellow-400/40 hover:shadow-[0_0_40px_rgba(250,204,21,0.1)] overflow-hidden">
+                <div className="relative md:flex md:items-center bg-slate-900/40 rounded-[24px] p-6 shadow-2xl backdrop-blur-md border border-white/5 transition-all duration-500 hover:bg-slate-900/80 hover:border-yellow-400/40 hover:shadow-[0_0_40px_rgba(250,204,21,0.1)] overflow-hidden">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="relative shrink-0 overflow-hidden rounded-xl border border-white/10 bg-slate-950 md:w-72 lg:w-80 aspect-[4/3]">
                         <img

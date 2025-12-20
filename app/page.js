@@ -6,20 +6,9 @@ import Animation from "./_components/animation";
 import { BlurAnimation, TextAnimation } from "./_components/animation";
 import Contact from "./_components/contact"
 import About from "./_components/about";
+import AmazingImages from "./_components/images";
 
 
-const ProfilePic = ({ imgSrc, context }) => {
-  return (
-
-    <div className='flex justify-center md:justify-start pt-20 md:pt-10'>
-      <img
-        className='shadow-lg w-60 h-60 md:w-80 md:h-80 object-cover rounded-full'
-        src={imgSrc}
-        alt={context}
-      />
-    </div>
-  );
-};
 export default function Home() {
   return (
 
@@ -36,6 +25,9 @@ export default function Home() {
 
         <section id="about" className="w-full tracking-wider flex flex-col p-5 md:flex-row md:gap-10 md:pl-20 md:pr-20 md:pt-20 md:pb-10">
           <About />
+        </section>
+        <section id="images" className="w-full max-w-7xl mx-auto   ">
+          <AmazingImages></AmazingImages>
 
         </section>
 

@@ -11,7 +11,8 @@ const ProfilePic = ({ imgSrc, context }) => {
 
         <div className='flex justify-center md:justify-start pt-20 md:pt-10'>
             <img
-                className='shadow-lg w-60 h-60 md:w-80 md:h-80 object-cover rounded-full'
+                className=" shadow-lg  relative md:flex md:items-center bg-slate-900/40 rounded-[24px] p-6 shadow-2xl backdrop-blur-md rounded-full transition-all duration-500 hover:bg-slate-900/80 hover:border-yellow-400/40 hover:shadow-[0_0_40px_rgba(250,250,250,0.1)] overflow-hidden"
+
                 src={imgSrc}
                 alt={context}
             />
@@ -25,7 +26,7 @@ export default function About() {
 
                 <div className='flex-shrink-0 md:w-1/4'>
                     <Animation>
-                        <ProfilePic imgSrc="/me3.jpg" context="profile picture" />
+                        <ProfilePic imgSrc="/me6.jpg" context="profile picture" />
                     </Animation>
                 </div>
 

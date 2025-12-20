@@ -2,7 +2,7 @@ import React from 'react'
 
 const Displayprojct = ({ imgSrc, title, link, context, badges = [] }) => {
     return (
-        <div className="group max-w-xl bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5 p-1 shadow-2xl transition-all duration-500 hover:border-yellow-400/30 hover:shadow-[0_0_30px_rgba(250,204,21,0.1)]">
+        <div className="group max-w-xl bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5 p-1 shadow-2xl transition-all duration-500 hover:bg-slate-900/80 hover:border-yellow-400/30 hover:shadow-[0_0_30px_rgba(250,204,21,0.1)]">
 
             {/* Image Container with a subtle yellow overlay on hover */}
             <div className="relative rounded-t-xl overflow-hidden bg-slate-900/50 aspect-video">
@@ -18,7 +18,7 @@ const Displayprojct = ({ imgSrc, title, link, context, badges = [] }) => {
                 <div className="flex justify-between items-start">
                     <div>
                         {/* Decorative Tag */}
-                        <span className="text-[10px] uppercase tracking-widest text-yellow-500 font-bold mb-1 block">Project Case Study</span>
+                        {/* <span className="text-[10px] uppercase tracking-widest text-yellow-500 font-bold mb-1 block">Project Case Study</span> */}
                         <h2 className="text-3xl font-bold text-white tracking-tight transition-colors group-hover:text-yellow-400">
                             {title}
                         </h2>
