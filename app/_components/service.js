@@ -180,15 +180,42 @@ const Services = () => {
                             {
                                 name: 'Neon', icon: '⚡', bgColor: '#000000', borderColor: '#1a1a1a', textColor: '#00e599'
                             },
-                            {
-                                name: 'Drizzle', icon: '💧', bgColor: '#1a1d12', borderColor: '#3a3f24', textColor: '#c5f200'
-                            },
+
                             { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' }
 
 
                         ]}
                     />
+                    <Displayprojct
+                        imgSrc={"./layers.jpg"}
+                        title={"Lead Gen Website"}
+                        link={"https://lead-gen-website-gamma.vercel.app"}
+                        context={"a marketing tool specifically designed to convert visitors into potential customers (leads) by collecting their contact information, usually through forms in exchange for services. "}
+                        badges={[
 
+                            {
+                                name: 'Next.js', icon: '▲', bgColor: '#000000', borderColor: '#333333', textColor: '#ffffff'
+                            },
+                            {
+                                name: 'Tailwind', icon: '🌊', bgColor: '#0f172a', borderColor: '#1e293b', textColor: '#38bdf8'
+                            },
+                            {
+                                name: 'Shadcn', icon: '🔘', bgColor: '#030712', borderColor: '#1f2937', textColor: '#ffffff'
+                            },
+                            {
+                                name: 'Drizzle', icon: '💧', bgColor: '#1a1d12', borderColor: '#3a3f24', textColor: '#c5f200'
+                            },
+                            {
+                                name: 'Neon', icon: '⚡', bgColor: '#000000', borderColor: '#1a1a1a', textColor: '#00e599'
+                            },
+
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' },
+                            {
+                                name: 'Tailark', icon: '⚡', bgColor: 'linear-gradient(135deg, #0f172a 0%, #020617 100%)', borderColor: '#9B99FE', textColor: '#2BC8B7'
+                            }
+
+                        ]}
+                    />
                 </div>
             </ComponentBlurAnimation>
             <div className="m-5 md:m-10 lg:m-20">

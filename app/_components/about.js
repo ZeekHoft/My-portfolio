@@ -83,6 +83,10 @@ export default function About() {
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height={35} width={35} alt="pycharm logo" />
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height={35} width={35} alt="godot logo" />
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height={35} width={35} alt="docker logo" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height={35} width={35} alt="typescript logo" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/drizzle/drizzle-original.svg" height={35} width={35} alt="drizzle logo" />
+                                    <img src="https://raw.githubusercontent.com/neondatabase/neon/main/logo.svg" height={35} width={35} alt="neon logo" className="dark:invert" />
+                                    <img src="https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/favicon.ico" height={35} width={35} alt="shadcn logo" className="dark:invert" />
                                 </div>
                             </div>
                         </TextAnimation>

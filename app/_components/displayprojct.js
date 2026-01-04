@@ -27,10 +27,10 @@ const Displayprojct = ({ imgSrc, title, link, context, badges = [] }) => {
 
                     <a href={link} className="p-2 rounded-full bg-white/5 border border-white/10 hover:border-yellow-400/50 hover:bg-white/10 transition-all duration-300">
                         <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            src="./arrow.jpg"
                             width="24"
                             height="24"
-                            alt="github logo"
+                            alt="go to logo"
                             className="invert opacity-80 group-hover:opacity-100"
                         />
                     </a>
